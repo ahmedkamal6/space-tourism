@@ -9,8 +9,12 @@ $(function(){
     });
     $(".burger").on('click', function () {
         $(".mobNav").slideToggle(500);
-        if($(".burger img").attr("src") != "../assets/shared/icon-close.svg")
+       $(".mobNav").slideToggle(500);
+        if($(".burger img").attr("src") != "../assets/shared/icon-close.svg"){
+            $(".burger img").fadeOut(250);
             $(".burger img").attr("src", "../assets/shared/icon-close.svg");
+            $(".burger img").fadeIn(1);
+        }
         else
         {
             $(".burger img").fadeOut(250);
