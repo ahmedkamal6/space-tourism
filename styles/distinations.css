@@ -23,7 +23,7 @@ nav{
 {
     display: none;
     padding-right: 30px;
-    z-index: 5;
+    z-index: 10;
     cursor: pointer;
 }
 .logo
@@ -36,7 +36,7 @@ nav{
     padding:40px;
     list-style: none;
     gap: 70px;
-    z-index: 2;
+    z-index: 9;
     
 }
 .mobNav{
@@ -46,6 +46,7 @@ nav{
     top:0;
     right:0;
     display: none;
+    z-index: 9;
 }
 .mobNav ul{
     flex-direction: column;
