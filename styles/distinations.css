@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: system-ui;
+}
+body{
+    background-image:url("../assets/destination/background-destination-desktop.jpg" );
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.burger
+{
+    display: none;
+    padding-right: 30px;
+    z-index: 5;
+    cursor: pointer;
+}
+.logo
+{
+    margin-right: 50px;
+}
+
+.navigation ul,.mobNav ul{
+    display: flex;
+    padding:40px;
+    list-style: none;
+    gap: 70px;
+    z-index: 2;
+    
+}
+.mobNav{
+    height: 100vh;
+    position: fixed;
+    padding-right: 200px;
+    top:0;
+    right:0;
+    display: none;
+}
+.mobNav ul{
+    flex-direction: column;
+}
+.navigation,.mobNav{
+    background-color: rgba(31, 31, 40, 0.547);
+    backdrop-filter: blur(15px);
+}
+
+.navigation ul a ,.mobNav ul a{
+    color:white;
+    font-size: 17px;
+    font-weight: 100;
+    padding-bottom: 39px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.5s;
+
+}
+.navigation ul a:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.211);
+}
+@media only screen and (max-width:1439px){
+    body{
+        background-image:url("../assets/destination/background-destination-tablet.jpg" );
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:770px){
+    .navigation ul{
+        gap: 60px;
+    }
+}
+@media only screen and (max-width:767px) {
+    .navigation ul a,.navigation ul span{
+        font-size: 15px;
+    }
+    body{
+        background-image:url("../assets/destination/background-destination-mobile.jpg" );
+        background-size: cover;
+    }
+    .navigation{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    
+}
+
+ul span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*___________________________________________*/
+.content{
+    margin-top: 150px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.content .navigation{
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    display: block;
+}
+.content .navigation ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 20px;
+    z-index: 2;
+}
+.content .navigation ul a{
+    color: #aaadc0;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 10px;
+
+}
+.right{
+    min-width: 30%;
+}
+.left h1{
+    margin-bottom: 70px;
+}
+.left h1 span{
+    color: #505677;
+}
+.left img{
+    width: 300px;
+    height: 300px;
+}
+.description h1{
+    font-size: 64px;
+}
+.description p{
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.active{
+    color:white
+}
+.distandtime{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.dist,.time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 32px;
+}
+.dist span,.time span{
+    color: #aaadc0;
+    font-size: 14px;
+}
+@media only screen and (max-width:1439px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .left{
+        text-align: center;
+    }
+    .left img{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    .left h1{
+        margin-bottom: 70px;
+        padding-left: 30px;
+        margin-right: 400px;
+        text-align: left;
+    }
+    .description{
+        text-align: center;
+    }
+    .right{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:768px){
+    .content h1{
+        font-size: 24px;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .left img{
+        width: 200px;
+        height: 200px;
+        margin:0;
+    }
+    .content .navigation ul{
+        padding: 0;
+    }
+    .description h1{
+        font-size: 72px;
+        margin: 0;
+    }
+    .description p{
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .distandtime{
+        flex-direction: column;
+    }
+}
