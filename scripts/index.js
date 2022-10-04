@@ -9,11 +9,11 @@ $(function(){
     });
     $(".burger").on('click', function () {
         $(".mobNav").slideToggle(500);
-        if($(".burger img").attr("src") != "../../assets/shared/icon-close.svg"){
+        if($(".burger img").attr("src") != "space-tourism/assets/shared/icon-close.svg"){
             $(".burger img").fadeOut(250);
             setTimeout(function () {  
-                $(".burger img").attr("src",  "../../assets/shared/icon-close.svg");
-                $(".burger img").attr("src",  "../../assets/shared/icon-close.svg");
+                $(".burger img").attr("src",  "space-tourism/assets/shared/icon-close.svg");
+                $(".burger img").attr("src",  "space-tourism/assets/shared/icon-close.svg");
                 $(".burger img").fadeIn(1);
                 },200);
         }
