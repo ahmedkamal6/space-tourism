@@ -9,20 +9,10 @@ $(function(){
     });
     $(".burger").on('click', function () {
         $(".mobNav").slideToggle(500);
-       $(".mobNav").slideToggle(500);
         if($(".burger img").attr("src") != "../assets/shared/icon-close.svg"){
-            $(".burger img").fadeOut(250);
             $(".burger img").attr("src", "../assets/shared/icon-close.svg");
-            $(".burger img").fadeIn(1);
-        }
         else
-        {
-            $(".burger img").fadeOut(250);
-            setTimeout(function () {  
             $(".burger img").attr("src",  "../assets/shared/icon-hamburger.svg");
-            $(".burger img").fadeIn(1);
-            },200);
-        }
     });
 
     function executeIfMinWidth768 (e) {
